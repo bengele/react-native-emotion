@@ -18,6 +18,8 @@
     "lib",
     "index.js"
   ],
+  "homepage": "https://github.com/bengele/react-native-emotion/blob/master/README.md",
+  "description": "React Native WebView component for iOS, Android",
   "devDependencies": {
     "react": "16.8.3",
     "react-native": "0.60.5"
