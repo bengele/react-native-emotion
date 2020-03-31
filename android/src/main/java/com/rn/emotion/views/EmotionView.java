@@ -4,6 +4,8 @@ import android.content.Context;
 import android.graphics.Canvas;
 import android.text.Spannable;
 import android.util.AttributeSet;
+import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.rn.emotion.plugin.EmotionSpannableMaker;
@@ -15,12 +17,12 @@ public class EmotionView extends TextView {
     public EmotionView(Context context) {
         super(context);
         mContext = context;
+        initLayout();
     }
 
     public EmotionView(Context context, AttributeSet attrs, int defStyleAttr){
         super(context,attrs,defStyleAttr);
         mContext = context;
-
     }
 
     public EmotionView(Context context, AttributeSet attrs){
@@ -29,14 +31,9 @@ public class EmotionView extends TextView {
     }
 
 
-    @Override
-    protected void onDraw(Canvas canvas) {
-        super.onDraw(canvas);
-    }
-
-    @Override
-    protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
-        super.onMeasure(widthMeasureSpec, heightMeasureSpec);
+    private void initLayout(){
+        ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
+        setLayoutParams(lp);
     }
 
 
@@ -55,8 +52,12 @@ public class EmotionView extends TextView {
      */
     public void setEmotionText(String text,int size){
         Spannable spannable = EmotionSpannableMaker.buildEmotionSpannable(mContext,text,size);
-        setText(spannable);
-
+        setText(text);
+        ViewGroup.LayoutParams lp = getLayoutParams();
+        lp.width = 200;
+        lp.height = 100;
+        setBackgroundColor(0xfd0);
+        setLayoutParams(lp);
     }
 
     @Override

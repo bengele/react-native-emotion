@@ -1,25 +1,34 @@
 "use strict";
-import { Component } from "react";
+import React,{ Component } from "react";
 import PropTypes from "prop-types";
-import { View, requireNativeComponent } from "react-native";
+import {View, requireNativeComponent ,NativeModules} from "react-native";
 
-const DEmotionView = requireNativeComponent("EmotionView", {
+const RNEmotion = NativeModules.RNEmotion || {};
+
+const RNCEmotionView = requireNativeComponent("RNCEmotionView", {
   propTypes: {
     text: PropTypes.string,
-    // ...View.propTypes // 包含默认的View的属性
+    ...View.propTypes // 包含默认的View的属性
   }
 });
 
 export class EmotionView extends Component {
-  constructor() {
+  constructor(props) {
+    super(props)
     this.state = {
-      emotionText: this.props.text || ""
+      emotionText: props.text || ""
     };
+  }
+
+  setEmotionText(text){
+    this.setState({emotionText:text})
   }
 
   render() {
     const { text, ...restProps } = this.props;
     const { emotionText } = this.state;
-    return <DEmotionView text={emotionText} {...restProps} />;
+    
+    return <RNCEmotionView  text={emotionText} {...restProps} />;
   }
 }
+
