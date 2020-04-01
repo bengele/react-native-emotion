@@ -19,6 +19,11 @@
 3. In XCode, in the project navigator, select your project. Add `libRNEmotion.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
 4. Run your project (`Cmd+R`)<
 
+#### pod
+1. `pod 'react-native-emotion', :path => './node_modules/react-native-emotion' `
+2. `pod install ` or `pod update --verbose --no-repo-update ` 
+
+
 #### Android
 
 1. Open up `android/app/src/main/java/[...]/MainActivity.java`
@@ -45,9 +50,11 @@
 
 ## Usage
 ```javascript
-import RNEmotion from 'react-native-emotion';
+import {EmotionView} from 'react-native-emotion';
 
-// TODO: What to do with the module?
-RNEmotion;
+<EmotionView
+    style={{ width: 200, height: 100 }}
+    text={"表情[微笑][撇嘴][色][发呆]"}
+/>
 ```
   
