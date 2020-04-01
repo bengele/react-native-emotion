@@ -1,7 +1,7 @@
 
 {
   "name": "react-native-emotion",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "description": "emotion",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,8 @@
     "android",
     "ios",
     "lib",
-    "index.js"
+    "index.js",
+    "react-native-emotion.podspec"
   ],
   "homepage": "https://github.com/bengele/react-native-emotion/blob/master/README.md",
   "description": "React Native WebView component for iOS, Android",

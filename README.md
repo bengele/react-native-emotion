@@ -57,4 +57,6 @@ import {EmotionView} from 'react-native-emotion';
     text={"表情[微笑][撇嘴][色][发呆]"}
 />
 ```
+
+###### TIP:Emojis may be involved in copyright infringement
   

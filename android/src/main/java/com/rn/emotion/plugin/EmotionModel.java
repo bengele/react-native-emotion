@@ -118,31 +118,33 @@ public class EmotionModel {
         EMOTION_CLASSIC_MAP.put("[怄火]", R.drawable.expression_95);
         EMOTION_CLASSIC_MAP.put("[转圈]", R.drawable.expression_96);
 
-        // 编码参考 http://www.oicqzone.com/tool/emoji/
-
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F604), R.drawable.expression_97);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F637), R.drawable.expression_98);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F602), R.drawable.expression_99);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F61D), R.drawable.expression_101);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F633), R.drawable.expression_102);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F631), R.drawable.expression_103);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F614), R.drawable.expression_104);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F612), R.drawable.expression_105);
-
         EMOTION_CLASSIC_MAP.put("[嘿哈]", R.drawable.expression_107);
         EMOTION_CLASSIC_MAP.put("[捂脸]", R.drawable.expression_108);
         EMOTION_CLASSIC_MAP.put("[奸笑]", R.drawable.expression_106);
         EMOTION_CLASSIC_MAP.put("[机智]", R.drawable.expression_109);
+        EMOTION_CLASSIC_MAP.put("[红包]", R.drawable.expression_111);
         EMOTION_CLASSIC_MAP.put("[皱眉]", R.drawable.expression_119);
         EMOTION_CLASSIC_MAP.put("[耶]", R.drawable.expression_113);
+        
 
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F47B), R.drawable.expression_114);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F64F), R.drawable.expression_115);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F4AA), R.drawable.expression_116);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F389), R.drawable.expression_117);
-        EMOTION_CLASSIC_MAP.put(emojiString(0x1F381), R.drawable.expression_118);
+        // 编码参考 http://www.oicqzone.com/tool/emoji/
 
-        EMOTION_CLASSIC_MAP.put("[红包]", R.drawable.expression_111);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F604), R.drawable.expression_97);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F637), R.drawable.expression_98);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F602), R.drawable.expression_99);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F61D), R.drawable.expression_101);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F633), R.drawable.expression_102);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F631), R.drawable.expression_103);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F614), R.drawable.expression_104);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F612), R.drawable.expression_105);
+
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F47B), R.drawable.expression_114);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F64F), R.drawable.expression_115);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F4AA), R.drawable.expression_116);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F389), R.drawable.expression_117);
+        // EMOTION_CLASSIC_MAP.put(emojiString(0x1F381), R.drawable.expression_118);
+
+        
     }
 
     private static String emojiString(int code) {
