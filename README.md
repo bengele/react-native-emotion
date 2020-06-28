@@ -49,6 +49,17 @@ import {EmotionView} from 'react-native-emotion';
     text={"表情[微笑][撇嘴][色][发呆]"}
 />
 ```
+```swift
+//use in ios
+let view = EmotionView.init()
+view.setEmotionText("表情[微笑][撇嘴][色][发呆]")
 
+```
+```java
+//use in android
+EmotionView view = new EmotionView();
+view.setEmotionText("表情[微笑][撇嘴][色][发呆]");
+
+```
 ###### TIP:Emojis may be involved in copyright infringement
   
